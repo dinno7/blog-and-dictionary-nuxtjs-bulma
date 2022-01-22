@@ -1,6 +1,5 @@
 <template>
   <div>
-    <button @click="showAlert">Click</button>
     <div
       class="dict columns is-flex is-flex-direction-column is-justify-content-start is-align-items-center mt-6"
       style="min-width: 100vw; min-height: 100vh; row-gap: 2.5rem"
@@ -37,9 +36,6 @@ export default {
   // middleware: ["auth"],
 
   methods: {
-    showAlert() {
-      this.$toast.error("There is an error!");
-    },
     async translateText() {
       if (!this.text.length) {
         return;
